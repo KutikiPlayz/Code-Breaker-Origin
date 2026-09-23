@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "code-breaker-origin",
+	"id": "code_breaker_origin",
 	"version": "${version}",
 	"name": "Code Breaker Origin",
 	"description": "Adds the Code Breaker Origin to the Origins Mod.",
@@ -10,13 +10,13 @@
 		"sources": "https://github.com/KutikiPlayz/Code-Breaker-Origin"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/code-breaker-origin/icon.png",
+	"icon": "assets/code_breaker_origin/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [ "coolguy.kutikiplayz.CodeBreakerOrigin" ]
 	},
 	"mixins": [
-		"code-breaker-origin.mixins.json"
+		"code_breaker_origin.mixins.json"
 	],
 	"depends": {
 		"java": ">=21",

@@ -10,4 +10,4 @@ pluginManagement {
 }
 
 // Should match your modid
-rootProject.name = 'code-breaker-origin'
+rootProject.name = 'code_breaker_origin'

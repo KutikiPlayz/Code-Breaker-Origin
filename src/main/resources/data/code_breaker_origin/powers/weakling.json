@@ -1,0 +1,74 @@
+{
+  "type": "origins:multiple",
+  "name": "§cWeakling",
+  "description": "The years spent inside to gain the knowledge and skills you have has been costly.\nYou have 2 less hearts, need to eat more often, deal -1 total attack damage, mine slower, and hurt your fists punching things.",
+  "lower_max_health": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "*:*",
+      "amount": -4.0,
+      "operation": "add_value",
+      "attribute": "minecraft:generic.max_health"
+    }
+  },
+  "tire_faster": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 1.0
+    }
+  },
+  "deal_less_damage": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "add_total_late",
+      "amount": -1.0
+    }
+  },
+  "mine_slower": {
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:mining_fatigue",
+        "duration": -1,
+        "show_particles": false,
+        "show_icon": false
+      }
+    },
+    "entity_action_removed": {
+      "type": "origins:clear_effect",
+      "effect": "minecraft:mining_fatigue"
+    }
+  },
+  "hurt_fists": {
+    "type": "origins:action_on_key_press",
+    "entity_action": {
+      "type": "origins:damage",
+      "damage_type": "code_breaker_origin:weak_hands",
+      "amount": 1.0
+    },
+    "cooldown": 10,
+    "key": {
+      "id": "key.attack",
+      "continuous": true
+    },
+    "condition": {
+      "type": "origins:all_of",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "item_condition": {
+            "type": "origins:empty"
+          },
+          "equipment_slot": "mainhand"
+        },
+        {
+          "type": "origins:raycast",
+          "shape_type": "collider",
+          "fluid_handling": "none"
+        }
+      ]
+    }
+  }
+}

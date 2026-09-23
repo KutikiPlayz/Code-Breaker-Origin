@@ -1,0 +1,9 @@
+{
+  "powers": [
+    "code_breaker_origin:weakling"
+  ],
+  "icon": { "id": "minecraft:lime_dye" },
+  "impact": 2,
+  "name": "§aCode Breaker",
+  "description": "Bend the world to your will with your runtime code abilities."
+}

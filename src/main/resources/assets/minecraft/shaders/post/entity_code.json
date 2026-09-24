@@ -1,0 +1,24 @@
+{
+    "targets": [
+        "swap",
+        "swap2",
+        "final"
+    ],
+    "passes": [
+        {
+            "name": "matrix",
+            "intarget": "final",
+            "outtarget": "swap"
+        },
+        {
+            "name": "glitch",
+            "intarget": "swap",
+            "outtarget": "swap2"
+        },
+        {
+            "name": "blit",
+            "intarget": "swap2",
+            "outtarget": "final"
+        }
+    ]
+}

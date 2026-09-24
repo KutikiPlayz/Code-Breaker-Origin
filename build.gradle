@@ -3,6 +3,10 @@ plugins {
 	id 'maven-publish'
 }
 
+loom {
+    accessWidenerPath.set(file("src/main/resources/code_breaker_origin.accesswidener"))
+}
+
 repositories {
     mavenLocal()
     mavenCentral()

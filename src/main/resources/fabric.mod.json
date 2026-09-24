@@ -15,6 +15,7 @@
 	"entrypoints": {
 		"main": [ "coolguy.kutikiplayz.CodeBreakerOrigin" ]
 	},
+	"accessWidener": "code_breaker_origin.accesswidener",
 	"mixins": [
 		"code_breaker_origin.mixins.json"
 	],

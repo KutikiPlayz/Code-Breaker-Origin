@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "package": "coolguy.kutikiplayz.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LivingEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "BufferBuilderStorageMixin",
+    "EntityRenderDispatcherMixin",
+    "GameRendererMixin",
+    "ProjectileEntityRendererMixin",
+    "RenderLayerMixin",
+    "RenderLayerMixin$MultiPhaseMixin",
+    "RenderLayerMixin$MultiPhaseParametersMixin",
+    "RenderLayerMixin$MultiPhaseParametersMixin$MultiPhaseParametersBuilderMixin",
+    "ShoulderParrotFeatureRendererMixin",
+    "StuckStingersFeatureRendererMixin",
+    "TridentRiptideFeatureRendererMixin",
+    "WorldRendererMixin",
+    "accessor.MultiPhaseAccessor",
+    "accessor.MultiPhaseParametersAccessor"
+  ]
+}

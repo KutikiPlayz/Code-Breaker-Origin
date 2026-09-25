@@ -1,4 +1,4 @@
-package coolguy.kutikiplayz.mixin.power;
+package coolguy.kutikiplayz.mixin.power.file_corruption;
 
 import coolguy.kutikiplayz.extension.power.CodeHudRender;
 import io.github.apace100.apoli.util.HudRender;

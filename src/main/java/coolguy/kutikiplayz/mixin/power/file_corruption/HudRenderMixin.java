@@ -1,4 +1,4 @@
-package coolguy.kutikiplayz.mixin.power;
+package coolguy.kutikiplayz.mixin.power.file_corruption;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import coolguy.kutikiplayz.extension.power.CodeHudRender;

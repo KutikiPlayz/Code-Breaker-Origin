@@ -1,0 +1,7 @@
+{
+  "name": "§cNight Owl",
+  "description": "You always get your best ideas in the middle of the night, and have trained yourself to be fully functioning on zero sleep! (mostly)\nThis does come with the small caveat that if you do ever sleep you probably wont wake back up... And if you're caught outside at night you WILL be bombarded by phantoms...",
+  "type": "origins:prevent_sleep",
+  "message": "text.code_breaker_origin.not_tired",
+  "ignore_for_sleep_count": true
+}

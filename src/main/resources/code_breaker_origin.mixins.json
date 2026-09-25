@@ -28,6 +28,8 @@
   "mixins": [
     "power.file_corruption.HudRenderMixin",
     "power.file_corruption.ParentHudRenderMixin",
+    "power.night_owl.PreventSleepPowerTypeMixin",
+    "power.night_owl.SleepManagerMixin",
     "shader.LivingEntityMixin"
   ]
 }

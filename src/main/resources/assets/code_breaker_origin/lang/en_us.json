@@ -1,4 +1,5 @@
 {
   "death.attack.file_corruption": "%1$s's data corrupted",
-  "death.attack.weak_hands": "%1$s broke their hands"
+  "death.attack.weak_hands": "%1$s broke their hands",
+  "text.code_breaker_origin.not_tired": "You're not tired"
 }

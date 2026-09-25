@@ -3,7 +3,9 @@
   "package": "coolguy.kutikiplayz.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "LivingEntityMixin"
+    "power.HudRenderMixin",
+    "power.ParentHudRenderMixin",
+    "shader.LivingEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
@@ -12,19 +14,20 @@
     "requireAnnotations": true
   },
   "client": [
-    "BufferBuilderStorageMixin",
-    "EntityRenderDispatcherMixin",
-    "GameRendererMixin",
-    "ProjectileEntityRendererMixin",
-    "RenderLayerMixin",
-    "RenderLayerMixin$MultiPhaseMixin",
-    "RenderLayerMixin$MultiPhaseParametersMixin",
-    "RenderLayerMixin$MultiPhaseParametersMixin$MultiPhaseParametersBuilderMixin",
-    "ShoulderParrotFeatureRendererMixin",
-    "StuckStingersFeatureRendererMixin",
-    "TridentRiptideFeatureRendererMixin",
-    "WorldRendererMixin",
     "accessor.MultiPhaseAccessor",
-    "accessor.MultiPhaseParametersAccessor"
+    "accessor.MultiPhaseParametersAccessor",
+    "power.PowerHudRendererMixin",
+    "shader.BufferBuilderStorageMixin",
+    "shader.EntityRenderDispatcherMixin",
+    "shader.GameRendererMixin",
+    "shader.ProjectileEntityRendererMixin",
+    "shader.RenderLayerMixin",
+    "shader.RenderLayerMixin$MultiPhaseMixin",
+    "shader.RenderLayerMixin$MultiPhaseParametersMixin",
+    "shader.RenderLayerMixin$MultiPhaseParametersMixin$MultiPhaseParametersBuilderMixin",
+    "shader.ShoulderParrotFeatureRendererMixin",
+    "shader.StuckStingersFeatureRendererMixin",
+    "shader.TridentRiptideFeatureRendererMixin",
+    "shader.WorldRendererMixin"
   ]
 }

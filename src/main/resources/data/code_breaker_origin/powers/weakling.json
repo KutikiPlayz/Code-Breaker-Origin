@@ -45,7 +45,7 @@
     "type": "origins:action_on_key_press",
     "entity_action": {
       "type": "origins:damage",
-      "damage_type": "code_breaker_origin:weak_hands",
+      "damage_type": "*:weak_hands",
       "amount": 1.0
     },
     "cooldown": 10,

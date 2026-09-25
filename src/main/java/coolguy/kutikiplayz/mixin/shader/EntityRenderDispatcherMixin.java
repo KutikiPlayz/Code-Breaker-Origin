@@ -1,4 +1,4 @@
-package coolguy.kutikiplayz.mixin;
+package coolguy.kutikiplayz.mixin.shader;
 
 import coolguy.kutikiplayz.render.CodeRenderLayers;
 import net.minecraft.client.render.RenderLayer;

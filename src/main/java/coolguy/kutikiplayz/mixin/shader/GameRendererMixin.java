@@ -1,8 +1,8 @@
-package coolguy.kutikiplayz.mixin;
+package coolguy.kutikiplayz.mixin.shader;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.datafixers.util.Pair;
-import coolguy.kutikiplayz.extension.CodeWorldRenderer;
+import coolguy.kutikiplayz.extension.shader.CodeWorldRenderer;
 import coolguy.kutikiplayz.render.CodeGameRenderer;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gl.ShaderProgram;

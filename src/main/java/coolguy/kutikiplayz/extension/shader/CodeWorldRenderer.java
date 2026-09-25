@@ -1,4 +1,4 @@
-package coolguy.kutikiplayz.extension;
+package coolguy.kutikiplayz.extension.shader;
 
 import net.minecraft.client.gl.Framebuffer;
 import org.jetbrains.annotations.Nullable;

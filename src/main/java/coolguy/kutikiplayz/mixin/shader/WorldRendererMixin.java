@@ -1,12 +1,12 @@
-package coolguy.kutikiplayz.mixin;
+package coolguy.kutikiplayz.mixin.shader;
 
 import com.google.gson.JsonSyntaxException;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
-import coolguy.kutikiplayz.extension.CodeBufferBuilderStorage;
-import coolguy.kutikiplayz.extension.CodeLivingEntity;
-import coolguy.kutikiplayz.extension.CodeWorldRenderer;
+import coolguy.kutikiplayz.extension.shader.CodeBufferBuilderStorage;
+import coolguy.kutikiplayz.extension.shader.CodeLivingEntity;
+import coolguy.kutikiplayz.extension.shader.CodeWorldRenderer;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gl.Framebuffer;
 import net.minecraft.client.gl.PostEffectProcessor;

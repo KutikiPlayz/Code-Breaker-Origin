@@ -1,6 +1,6 @@
-package coolguy.kutikiplayz.mixin;
+package coolguy.kutikiplayz.mixin.shader;
 
-import coolguy.kutikiplayz.extension.CodeLivingEntity;
+import coolguy.kutikiplayz.extension.shader.CodeLivingEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;

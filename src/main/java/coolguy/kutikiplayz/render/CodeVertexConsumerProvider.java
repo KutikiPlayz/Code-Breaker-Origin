@@ -1,6 +1,6 @@
 package coolguy.kutikiplayz.render;
 
-import coolguy.kutikiplayz.extension.CodeRenderLayer;
+import coolguy.kutikiplayz.extension.shader.CodeRenderLayer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.RenderLayer;

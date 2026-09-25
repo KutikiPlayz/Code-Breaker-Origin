@@ -1,7 +1,7 @@
 package coolguy.kutikiplayz.render;
 
-import coolguy.kutikiplayz.extension.CodeMultiPhaseParameters;
-import coolguy.kutikiplayz.extension.CodeWorldRenderer;
+import coolguy.kutikiplayz.extension.shader.CodeMultiPhaseParameters;
+import coolguy.kutikiplayz.extension.shader.CodeWorldRenderer;
 import coolguy.kutikiplayz.mixin.accessor.MultiPhaseAccessor;
 import coolguy.kutikiplayz.mixin.accessor.MultiPhaseParametersAccessor;
 import net.fabricmc.api.EnvType;

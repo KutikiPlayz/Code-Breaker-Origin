@@ -1,6 +1,6 @@
-package coolguy.kutikiplayz.mixin;
+package coolguy.kutikiplayz.mixin.shader;
 
-import coolguy.kutikiplayz.extension.CodeBufferBuilderStorage;
+import coolguy.kutikiplayz.extension.shader.CodeBufferBuilderStorage;
 import coolguy.kutikiplayz.render.CodeVertexConsumerProvider;
 import net.minecraft.client.render.BufferBuilderStorage;
 import net.minecraft.client.render.VertexConsumerProvider;

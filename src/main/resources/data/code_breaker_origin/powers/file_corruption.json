@@ -1,0 +1,134 @@
+{
+  "name": "§cUnstable Code",
+  "description": "Using your abilities will slowly build up desyncs in your data between the client and the server, and eventually corrupt your player data.\nIf enough corruption builds up, you'll start taking damage until it either goes down or you die.",
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "key": {
+      "id": "key.origins.primary_active"
+    },
+    "active_by_default": false,
+    "retain_state": false
+  },
+  "corruption": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 400,
+    "hud_render": {
+      "condition": {
+        "type": "origins:resource",
+        "resource": "*:file_corruption_corruption",
+        "comparison": ">",
+        "compare_to": 0
+      },
+      "sprite_location": "*:textures/gui/code_corruption_resource_bar.png",
+      "fade_in_time": 10,
+      "fade_out_time": 15,
+      "shake_threshold": 0.5,
+      "max_shake_intensity": 1.15
+    }
+  },
+  "corruption_tick_timer": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 15
+  },
+  "corruption_update": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:power_active",
+        "power": "*:file_corruption_toggle"
+      },
+      "if_action": {
+        "type": "origins:sequence",
+        "actions": [
+          {
+            "type": "origins:modify_resource",
+            "resource": "*:file_corruption_corruption",
+            "modifier": {
+              "operation": "add_total_late",
+              "amount": 2
+            }
+          },
+          {
+            "type": "origins:set_resource",
+            "resource": "*:file_corruption_corruption_tick_timer",
+            "value": 15
+          }
+        ]
+      },
+      "else_action": {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:resource",
+          "resource": "*:file_corruption_corruption_tick_timer",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        "if_action": {
+          "type": "origins:modify_resource",
+          "resource": "*:file_corruption_corruption",
+          "modifier": {
+            "operation": "add_total_late",
+            "amount": -1
+          }
+        },
+        "else_action": {
+          "type": "origins:modify_resource",
+          "resource": "*:file_corruption_corruption_tick_timer",
+          "modifier": {
+            "operation": "add_total_late",
+            "amount": -1
+          }
+        }
+      }
+    },
+    "interval": 1
+  },
+  "corrupt_player": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:damage",
+      "damage_type": "*:file_corruption",
+      "amount": 3.0
+    },
+    "interval": 10,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:file_corruption_corruption",
+      "comparison": ">=",
+      "compare_to": 400
+    }
+  },
+  "reset_upon_death": {
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
+      "type": "origins:sequence",
+      "actions": [
+        {
+          "type": "origins:set_resource",
+          "resource": "*:file_corruption_corruption",
+          "value": 0
+        },
+        {
+          "type": "origins:set_resource",
+          "resource": "*:file_corruption_corruption_tick_timer",
+          "value": 0
+        },
+        {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:power_active",
+            "power": "*:file_corruption_toggle"
+          },
+          "if_action": {
+            "type": "origins:toggle",
+            "power": "*:file_corruption_toggle"
+          }
+        }
+      ]
+    }
+  }
+}

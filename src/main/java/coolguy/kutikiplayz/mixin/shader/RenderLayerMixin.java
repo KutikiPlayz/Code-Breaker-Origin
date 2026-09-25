@@ -1,7 +1,7 @@
-package coolguy.kutikiplayz.mixin;
+package coolguy.kutikiplayz.mixin.shader;
 
-import coolguy.kutikiplayz.extension.CodeMultiPhaseParameters;
-import coolguy.kutikiplayz.extension.CodeRenderLayer;
+import coolguy.kutikiplayz.extension.shader.CodeMultiPhaseParameters;
+import coolguy.kutikiplayz.extension.shader.CodeRenderLayer;
 import coolguy.kutikiplayz.mixin.accessor.MultiPhaseParametersAccessor;
 import coolguy.kutikiplayz.render.CodeRenderLayers;
 import net.minecraft.client.render.RenderLayer;

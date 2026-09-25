@@ -1,4 +1,4 @@
-package coolguy.kutikiplayz.extension;
+package coolguy.kutikiplayz.extension.shader;
 
 public interface CodeLivingEntity {
     boolean code_breaker_origin$inCodeVision();

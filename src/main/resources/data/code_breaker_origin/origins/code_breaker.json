@@ -1,6 +1,7 @@
 {
   "powers": [
-    "code_breaker_origin:weakling"
+    "*:file_corruption",
+    "*:weakling"
   ],
   "icon": { "id": "minecraft:lime_dye" },
   "impact": 2,
